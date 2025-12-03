@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link rel="stylsheet" href="style.css">
+    <style>
+
+    .image{
+        display: flex;
+        margin-top: 30px;
+        align-items: center;
+        text-align: center;
+    }
+
+    a img{
+        height: 30vh;
+        
+    }
+
+    
+    .lightbox{
+        
+        text-align: center;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0,0,0,0.8);
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    .lightbox img{
+        height: 80vh;
+    }
+    .lightbox:target{
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="image">
+        <a href="#img1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7cb60harGApQPOxOAIYPe90Nroja37bUq9XfCWcNUxhivt8Hae-xaLVlIwlmvI78bT60Gwpb9qXTcLlvywVSl124szKD7HjAU4tZT&s=10"
+            alt="ghost rider">
+        </a>
+
+        <a href="#img2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSMyxBIq07V3wN0fJtLWIBHvfGs6ioZxLg9A&s"
+            alt="potter">
+        </a>
+
+        <a href="#img3">
+            <img src="https://cdn.marvel.com/content/2x/004tho_ons_mas_mob_04.jpg"
+            alt="thor">
+        </a>
+    </div>
+    
+    <div class="lightbox" id="img1">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7cb60harGApQPOxOAIYPe90Nroja37bUq9XfCWcNUxhivt8Hae-xaLVlIwlmvI78bT60Gwpb9qXTcLlvywVSl124szKD7HjAU4tZT&s=10"
+            alt="ghost rider">
+    </div>
+    <div class="lightbox" id="img2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSMyxBIq07V3wN0fJtLWIBHvfGs6ioZxLg9A&s"
+            alt="potter">
+    </div>
+    <div class="lightbox" id="img3">
+        <img src="https://cdn.marvel.com/content/2x/004tho_ons_mas_mob_04.jpg"
+            alt="thor">
+    </div>
+
+    
+
+</body>
+</html>
